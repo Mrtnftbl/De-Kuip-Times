@@ -1,0 +1,244 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #1b1b1b;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e31837;
+}
+
+header h2 {
+    color: #e31837;
+    font-size: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #e31837;
+}
+
+
+
+.hero {
+    text-align: center;
+    padding: 160px 20px;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)),
+        url("dekuip.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #e31837;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #a90e27;
+}
+
+.intro {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.intro h2 {
+    color: #e31837;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+
+.matches {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.matches h2 {
+    color: #e31837;
+    margin-bottom: 35px;
+    font-size: 28px;
+}
+
+.match-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.match-card {
+    background-color: #222;
+    padding: 30px 20px;
+    border-radius: 10px;
+    flex: 1;
+    border-bottom: 3px solid #e31837;
+}
+
+.match-card h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.score {
+    font-size: 35px;
+    font-weight: bold;
+    color: #e31837;
+    margin-bottom: 15px;
+}
+
+.match-card p {
+    color: #ccc;
+    line-height: 1.5;
+}
+
+/* CHAMPIONS LEAGUE PAGINA */
+
+.ucl-hero {
+    text-align: center;
+    padding: 120px 20px;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.8)),
+        url("dekuip.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ucl-hero h1 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.ucl-hero p {
+    font-size: 20px;
+    color: #ddd;
+}
+
+.ucl-content {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.ucl-content h2 {
+    color: #e31837;
+    font-size: 27px;
+    margin-top: 45px;
+    margin-bottom: 18px;
+}
+
+.ucl-content p {
+    color: #ddd;
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+.match-card {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.match-card:hover {
+    transform: translateY(-8px);
+    background-color: #303030;
+}
+
+.match-card span {
+    display: inline-block;
+    color: #e31837;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.article-image {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.social-person {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.social-person h4 {
+    color: white;
+}
+
+.social-person a {
+    color: white;
+    background: #e30613;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+}.social-person a {
+    color: white;
+    background: #e30613;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    min-width: 130px;
+}
+
+.social-person a:hover {
+    background: white;
+    color: #e30613;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(227, 6, 19, 0.3);
+}
