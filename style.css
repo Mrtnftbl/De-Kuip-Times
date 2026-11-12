@@ -242,3 +242,160 @@ nav a:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(227, 6, 19, 0.3);
 }
+.tiktok-section {
+    max-width: 850px;
+    margin: 45px auto;
+    padding: 30px 20px;
+    background: #181818;
+    border: 1px solid #333;
+    border-top: 3px solid #e30613;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.tiktok-section h2 {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.tiktok-description {
+    color: #aaa;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.video-container blockquote {
+    margin: 0 auto !important;
+}
+
+.tiktok-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 11px 22px;
+    background: #e30613;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.tiktok-link:hover {
+    background: white;
+    color: #e30613;
+}
+
+
+/* PROFIELKAARTEN - OVER ONS */
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 950px;
+}
+
+.team-card {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    background: linear-gradient(145deg, #202020, #111111);
+    border: 1px solid #333;
+    border-left: 4px solid #e30613;
+    border-radius: 14px;
+    padding: 22px;
+    width: 390px;
+    max-width: 100%;
+    text-align: left;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+    border-color: #e30613;
+    box-shadow: 0 10px 25px rgba(227, 6, 19, 0.18);
+}
+
+.team-card img {
+    width: 125px;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #e30613;
+    flex-shrink: 0;
+}
+
+.team-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.team-info h4 {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.team-info p {
+    color: #bdbdbd;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* MOBIELE WEERGAVE */
+
+@media (max-width: 600px) {
+    .team-card {
+        width: 100%;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .team-card img {
+        width: 100px;
+        height: 120px;
+    }
+}
+
+
+/* STYLING KOPJES OVER ONS */
+
+.team-container,
+.socials {
+    margin-top: 25px;
+}
+
+h3 {
+    color: white !important;
+    text-align: center !important;
+    font-size: 27px !important;
+    font-weight: bold;
+    margin: 45px 0 25px !important;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    background: #e30613;
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+
