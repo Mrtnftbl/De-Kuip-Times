@@ -94,7 +94,7 @@
         <h2>Nobody said it was easy:   </h2>
 
         <p>
-            Bayern München probeert terug te komen in de wedstrijd, maar feyenoord verdegidt net als
+            Bayern München probeert terug te komen in de wedstrijd, maar feyenoord verdedigt net als
             Prime Real Madrid en dan heb je ook nog de Nederlandse Neuer in het goal staan van Feyenoord
             Justin Bijlow. 
             In de minuut 45+7 is er een corner voor Bayern Munchen. Justin Bijlow tikt de bal de 16 uit
@@ -104,11 +104,55 @@
             Santiago gimenez staat klaar om hem te nemen, en tikt er hem netjes erin.
             2-0 Feyenoord! 
 
+     <div class="santi-card" onclick="openSanti()">
+    <img src="images/santi.jpg" alt="Santiago Giménez">
+
+    <div class="santi-info">
+        <h3>SANTI... AGO!</h3>
+        <p>Santiago Giménez</p>
+
+        <audio controls onclick="event.stopPropagation()">
+            <source src="audio/santi-ago.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</div>
+
+<div id="santi-popup" class="santi-popup" onclick="closeSanti()">
+    <div class="santi-popup-content" onclick="event.stopPropagation()">
+        <span class="santi-close" onclick="closeSanti()">×</span>
+        <img src="images/santi.jpg" alt="Santiago Giménez">
+        <h3>SANTI... AGO!</h3>
+        <p>El Bebote ❤️</p>
+    </div>
+</div>
+
+<script>
+function openSanti() {
+    document.getElementById("santi-popup").style.display = "flex";
+}
+
+function closeSanti() {
+    document.getElementById("santi-popup").style.display = "none";
+}
+</script>
+           
+           
+ <h2> En nu is het klaar! <h2> 
             <p> 
+            Als de rust voorbij is gaat de wedsrtijd weer verder in de natte kuip.
+            In de grootste gedeelte van de 2e helft waren en nul doelpunten, maar 
+            de wedsrtijd was alles behalve saai. Bayern Munchen bleef aanvallen,
+            maar Feyenoord bleef geweldig verdedigen en counteren. 20% balbezit voor
+            feyenoord, moet je dat eens voorstellen! Na alle aanvallen en reddingen 
+            van Justin Bijlow was de wedstrijd bijna afgelopen. Als er in de 58ste 
+            minuut een counter is drukt Feyenoord op de gas pedaal. Santiag Gimenez
+            word onderuit gehaald maar de arbieter kiest geweldig voor voordeel, en 
+            Feyenoord kan verder! Milambo, Milambo meegeven aan Ueda, Ueda om de 
+            beslissing daar te forceren! En daar is het klaar! 3 - 0 Feyenoord! 
+            (Ziggo sport commentaar)
+         </p>
 
-
-
-            </p>
+         Een avond om nooit te vergeten!
 
             
     
@@ -117,7 +161,8 @@
             7 reddingen van de doelman en een cleansheat! Ongetwijfeld een van zijn beste 
             wedstrijden tot nu toe! Hij kreeg daarom ook een 9,1 rating en eindigde in de 
             champions league team of the week. 20% balbezit voor Feyenoord tegenover 80% van Bayern! 
-            Echte Harambal van Feyenoord.
+            Echte Harambal van Feyenoord. Een wedstrijd voor de geschiedenisboeken! Dit had
+            niemand verwacht!
 
 
         </p>
@@ -132,6 +177,22 @@
             Doelpunten: Santiago Giménez (2) en Ayase Ueda.
         </p>
 
+       
+       <section class="stats-section">
+    <h2>WEDSTRIJDSTATISTIEKEN</h2>
+    <p class="stats-subtitle">Feyenoord - Bayern München</p>
+
+    <div class="stats-images">
+        <img src="images/stats1.jpg" alt="Wedstrijdstatistieken Feyenoord - Bayern">
+        <img src="images/stats2.jpg" alt="Aanvullende wedstrijdstatistieken">
+    </div>
+
+    <p class="stats-source">Bron: Flashscore</p>
+</section>
+       
+       
+       
+       
         <a class="button" href="index.html">TERUG NAAR HOME</a>
 
     </main>

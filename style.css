@@ -370,32 +370,558 @@ nav a:hover {
         height: 120px;
     }
 }
-
-
-/* STYLING KOPJES OVER ONS */
-
-.team-container,
-.socials {
-    margin-top: 25px;
+.santi-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 430px;
+    margin: 30px auto;
+    padding: 15px;
+    background: #181818;
+    border: 1px solid #333;
+    border-left: 4px solid #e30613;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
-h3 {
-    color: white !important;
-    text-align: center !important;
-    font-size: 27px !important;
-    font-weight: bold;
-    margin: 45px 0 25px !important;
-    padding-bottom: 12px;
+.santi-card img {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.santi-info {
+    flex: 1;
+}
+
+.santi-info h3 {
+    color: white;
+    margin: 0 0 5px;
+}
+
+.santi-info p {
+    color: #aaa;
+    margin: 0 0 10px;
+}
+
+.santi-info audio {
+    width: 100%;
+    height: 35px;
+}
+
+.santi-popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.santi-popup-content {
     position: relative;
+    background: #181818;
+    padding: 20px;
+    border: 2px solid #e30613;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 320px;
+    width: 85%;
 }
 
-h3::after {
-    content: "";
-    display: block;
-    width: 65px;
-    height: 3px;
+.santi-popup-content img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.santi-popup-content h3 {
+    color: white;
+}
+
+.santi-popup-content p {
+    color: #e30613;
+}
+
+.santi-close {
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.stats-section {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #181818;
+    border: 1px solid #333;
+    border-top: 3px solid #e30613;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.stats-section h2 {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.stats-subtitle {
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+.stats-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.stats-images img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #444;
+}
+
+.stats-source {
+    color: #777;
+    font-size: 12px;
+    margin-top: 18px;
+}
+/* Pagina's: Wedstrijd van de week en Tactische analyse */
+
+.coming-soon {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 60px 20px;
+    text-align: center;
+    background: #181818;
+    border-top: 4px solid #e30613;
+    border-radius: 12px;
+}
+
+.coming-soon h2 {
+    color: #e30613;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.coming-soon p {
+    color: #ccc;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.back-button {
+    display: inline-block;
     background: #e30613;
-    margin: 12px auto 0;
-    border-radius: 5px;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
+.back-button:hover {
+    background: #b90000;
+    transform: translateY(-2px);
+}
+
+/* NIEUWE HOMEPAGE VORMGEVING */
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 20px 8%;
+}
+
+nav a {
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background: #e31837;
+    color: white;
+}
+
+.hero {
+    min-height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-label,
+.section-label {
+    color: #e31837;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(227, 24, 55, 0.3);
+}
+
+.matches {
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.match-container {
+    flex-wrap: wrap;
+}
+
+.match-card {
+    min-width: 240px;
+    border: 1px solid #333;
+    border-bottom: 4px solid #e31837;
+    text-align: left;
+}
+
+.match-tag {
+    display: inline-block;
+    color: #e31837;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.card-link {
+    display: inline-block;
+    color: #e31837;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.match-card:hover .card-link,
+.feature-card:hover .card-link {
+    color: white;
+}
+
+/* NIEUWE KAARTEN */
+
+.extra-section {
+    padding: 75px 8%;
+    background: #181818;
+    text-align: center;
+}
+
+.extra-section h2,
+.about-section h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.feature-card {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    padding: 35px;
+    min-height: 230px;
+    background: linear-gradient(145deg, #292929, #151515);
+    border: 1px solid #383838;
+    border-left: 4px solid #e31837;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-7px);
+    border-color: #e31837;
+    box-shadow: 0 10px 25px rgba(227, 24, 55, 0.15);
+}
+
+.feature-number {
+    color: #e31837;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.feature-card h3 {
+    margin: 20px 0 12px;
+    font-size: 21px;
+}
+
+.feature-card p {
+    color: #bbb;
+    line-height: 1.7;
+}
+
+/* OVER ONS */
+
+.about-section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.about-section .team-container {
+    margin-top: 35px;
+}
+
+.social-heading {
+    margin-top: 70px;
+}
+
+footer {
+    background: #1b1b1b;
+    border-top: 2px solid #e31837;
+    text-align: center;
+    padding: 25px;
+    color: #888;
+    font-size: 13px;
+}
+
+/* MOBIELE WEERGAVE */
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+        padding: 18px 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 100px 20px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .match-container {
+        flex-direction: column;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        padding: 25px;
+    }
+
+    .extra-section,
+    .about-section {
+        padding: 55px 6%;
+    }
+}
+
+/* VERNIEUWDE SOCIAL MEDIA KAARTEN */
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 750px;
+    margin: 35px auto 20px;
+}
+
+.social-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 300px;
+    padding: 30px 25px;
+    background: linear-gradient(145deg, #222, #151515);
+    border: 1px solid #383838;
+    border-top: 3px solid #e30613;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.social-person:hover {
+    transform: translateY(-6px);
+    border-color: #e30613;
+    box-shadow: 0 10px 25px rgba(227, 6, 19, 0.15);
+}
+
+.social-person h4 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.social-person a {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    text-align: center;
+    color: white;
+    background: #e30613;
+    padding: 13px 15px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.social-person a:hover {
+    background: white;
+    color: #e30613;
+    transform: scale(1.04);
+}
+
+@media (max-width: 600px) {
+    .social-person {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+/* WEDSTRIJD VAN DE WEEK */
+
+.match-hero {
+    text-align: center;
+    padding: 100px 20px;
+    background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+        url("dekuip.jpg");
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid #e30613;
+}
+
+.match-hero h1 {
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+.match-details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.match-details span {
+    background: #e30613;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.match-competition {
+    color: #ccc;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.match-article {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.match-article h2 {
+    color: #e30613;
+    margin: 35px 0 15px;
+}
+
+.match-article p {
+    color: #ccc;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.match-status {
+    margin: 50px 0 30px;
+    padding: 30px;
+    background: #1d1d1d;
+    border-left: 4px solid #e30613;
+    border-radius: 10px;
+}
+
+.match-status p {
+    color: #e30613;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.match-status h3 {
+    margin: 12px 0;
+}
+
+.match-status span {
+    color: #aaa;
+}
+
+@media (max-width: 600px) {
+    .match-hero h1 {
+        font-size: 30px;
+    }
+
+    .match-hero {
+        padding: 75px 15px;
+    }
+}
+/* Rustige datum en locatie op wedstrijdpagina's */
+.match-date {
+    margin-top: 22px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.match-location {
+    margin-top: 8px;
+    color: #cccccc;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.match-competition {
+    margin-top: 18px;
+}
